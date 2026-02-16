@@ -1,0 +1,67 @@
+{
+  "manifest_version": "0.4",
+  "name": "@nimblebraininc/git-worktree",
+  "version": "0.1.0",
+  "description": "Git worktree manager for isolated workspaces with branch lifecycle, risk classification, and merge control",
+  "author": {
+    "name": "NimbleBrain Inc",
+    "email": "hello@nimblebrain.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NimbleBrainInc/mcp-git-worktree"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "mcp_git_worktree.server",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_git_worktree.server"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "worktree_create",
+      "description": "Create a new isolated worktree with its own branch"
+    },
+    {
+      "name": "worktree_list",
+      "description": "List all tracked worktrees and their status"
+    },
+    {
+      "name": "worktree_status",
+      "description": "Get detailed status of a single worktree"
+    },
+    {
+      "name": "worktree_diff",
+      "description": "Get the full diff between a worktree branch and its base with risk classification"
+    },
+    {
+      "name": "worktree_merge",
+      "description": "Merge a worktree branch into its base branch"
+    },
+    {
+      "name": "worktree_discard",
+      "description": "Discard a worktree and its branch without merging"
+    },
+    {
+      "name": "worktree_commit",
+      "description": "Commit changes in a specific worktree"
+    }
+  ],
+  "_meta": {
+    "org.mpaktrust": {
+      "mtf_version": "0.1",
+      "permissions": {
+        "filesystem": "read-write",
+        "network": "none",
+        "environment": "read",
+        "subprocess": "none",
+        "native": "none"
+      }
+    }
+  }
+}
