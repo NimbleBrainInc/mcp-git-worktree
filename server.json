@@ -2,7 +2,7 @@
   "$schema": "https://schemas.nimblebrain.ai/v1/nimblebrain-server.schema.json",
   "name": "ai.nimblebrain/git-worktree",
   "description": "Git worktree manager for isolated workspaces with branch lifecycle, risk classification, and merge control",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "Git Worktree MCP Server",
   "repository": {
     "url": "https://github.com/NimbleBrainInc/mcp-git-worktree",
