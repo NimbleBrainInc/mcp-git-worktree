@@ -1,6 +1,6 @@
 [project]
 name = "mcp-git-worktree"
-version = "0.1.1"
+version = "0.1.2"
 description = "Git Worktree MCP Server - Isolated workspaces via git worktrees"
 readme = "README.md"
 license = {text = "MIT"}

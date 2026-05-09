@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.4",
   "name": "@nimblebraininc/git-worktree",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Git worktree manager for isolated workspaces with branch lifecycle, risk classification, and merge control",
   "author": {
     "name": "NimbleBrain Inc",
